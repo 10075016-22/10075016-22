@@ -34,9 +34,11 @@
 
 ### 📊 My Stats:
 
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=10075016-22&theme=dark&background=000000)](https://git.io/streak-stats)
+![](https://github-readme-stats.vercel.app/api?username=10075016-22&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-languages/?username=10075016-22&layout=compact&theme=vision-friendly-dark)](https://github.com/10075016-22/github-readme-stats)
+![](https://github-readme-streak-stats.herokuapp.com/?user=10075016-22&theme=dark&hide_border=false)<br/>
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=10075016-22&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
 
