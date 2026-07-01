@@ -1,25 +1,26 @@
-name: Auto Contributions
+name: GitHub-Profile-3D-Contributions
 
 on:
-  schedule:
-    - cron: "0 8 * * *"
-  workflow_dispatch:
+  schedule: # Se ejecuta automáticamente todos los días a medianoche
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Te permite ejecutarlo manualmente desde la pestaña Actions
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    name: Generate 3D Profile SVGs
+    name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./ 
+      - uses: actions/checkout@v3
+      
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-
+          
       - name: Commit & Push
         run: |
-          git config user.name ${{ github.actor }}
-          git config user.email ${{ github.actor }}@users.noreply.github.com
-          git add .
-          git commit -m "Updated 3D Profile SVGs."
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A .
+          git commit -m "Generated 3D Profile" || exit 0
           git push
