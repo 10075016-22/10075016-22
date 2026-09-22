@@ -7,7 +7,7 @@
 ---
 
 ### 👨‍💻 About me:
-- 🔭 I'm currently working as a Frontend Developer specialized in Vue.js
+- 🔭 I'm currently working as a Frontend Developer specialized in Vue.js & Angular
 - 🌱 Always learning new technologies and best practices
 - 👨‍💻 Check out my portfolio at [https://thiago-lopez.vercel.app](https://thiago-lopez.vercel.app)
 - 💬 Ask me about **Vue.js, JavaScript, TypeScript or Frontend Development**
